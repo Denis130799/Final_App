@@ -20,6 +20,11 @@
 		920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0A41FBB72A00092CAE4 /* MapViewController.m */; };
 		920AD0A81FBB72D10092CAE4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0A71FBB72D10092CAE4 /* SettingsViewController.m */; };
 		920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0AA1FBB72E90092CAE4 /* WeatherViewController.m */; };
+		920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0AD1FBB77250092CAE4 /* NewsModel.m */; };
+		920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B01FBB77400092CAE4 /* MapModule.m */; };
+		920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B31FBB77580092CAE4 /* NotesModule.m */; };
+		920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B61FBB77790092CAE4 /* SettingsModule.m */; };
+		920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B91FBB77910092CAE4 /* WeatherModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,16 @@
 		920AD0A71FBB72D10092CAE4 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		920AD0A91FBB72E90092CAE4 /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		920AD0AA1FBB72E90092CAE4 /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		920AD0AC1FBB77250092CAE4 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		920AD0AD1FBB77250092CAE4 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		920AD0AF1FBB77400092CAE4 /* MapModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapModule.h; sourceTree = "<group>"; };
+		920AD0B01FBB77400092CAE4 /* MapModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapModule.m; sourceTree = "<group>"; };
+		920AD0B21FBB77580092CAE4 /* NotesModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModule.h; sourceTree = "<group>"; };
+		920AD0B31FBB77580092CAE4 /* NotesModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesModule.m; sourceTree = "<group>"; };
+		920AD0B51FBB77790092CAE4 /* SettingsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModule.h; sourceTree = "<group>"; };
+		920AD0B61FBB77790092CAE4 /* SettingsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsModule.m; sourceTree = "<group>"; };
+		920AD0B81FBB77910092CAE4 /* WeatherModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModule.h; sourceTree = "<group>"; };
+		920AD0B91FBB77910092CAE4 /* WeatherModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +206,8 @@
 		920AD0821FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0AF1FBB77400092CAE4 /* MapModule.h */,
+				920AD0B01FBB77400092CAE4 /* MapModule.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +257,8 @@
 		920AD0881FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0AC1FBB77250092CAE4 /* NewsModel.h */,
+				920AD0AD1FBB77250092CAE4 /* NewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +308,8 @@
 		920AD08E1FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0B21FBB77580092CAE4 /* NotesModule.h */,
+				920AD0B31FBB77580092CAE4 /* NotesModule.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +359,8 @@
 		920AD0941FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0B51FBB77790092CAE4 /* SettingsModule.h */,
+				920AD0B61FBB77790092CAE4 /* SettingsModule.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,6 +410,8 @@
 		920AD09A1FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0B81FBB77910092CAE4 /* WeatherModule.h */,
+				920AD0B91FBB77910092CAE4 /* WeatherModule.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -539,9 +564,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				920AD09F1FBB725E0092CAE4 /* NotesViewController.m in Sources */,
+				920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */,
 				920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */,
+				920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */,
 				920AD04A1FBB5F700092CAE4 /* ViewController.m in Sources */,
 				920AD0A21FBB727D0092CAE4 /* NewsViewController.m in Sources */,
+				920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */,
+				920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */,
+				920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */,
 				920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */,
 				920AD0551FBB5F700092CAE4 /* main.m in Sources */,
 				920AD0471FBB5F700092CAE4 /* AppDelegate.m in Sources */,
