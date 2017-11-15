@@ -25,6 +25,11 @@
 		920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B31FBB77580092CAE4 /* NotesModule.m */; };
 		920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B61FBB77790092CAE4 /* SettingsModule.m */; };
 		920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B91FBB77910092CAE4 /* WeatherModule.m */; };
+		920AD0C81FBCBB4B0092CAE4 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0C71FBCBB4B0092CAE4 /* DataManager.m */; };
+		920AD0CC1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0CA1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld */; };
+		920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0CF1FBCC99E0092CAE4 /* Note+CoreDataClass.m */; };
+		920AD0D31FBCC99E0092CAE4 /* Note+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */; };
+		920AD0D61FBCCA3E0092CAE4 /* DataManager+Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0D51FBCCA3E0092CAE4 /* DataManager+Notes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,15 @@
 		920AD0BD1FBB7AB10092CAE4 /* NotesModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModuleProtocol.h; sourceTree = "<group>"; };
 		920AD0BE1FBB7ACE0092CAE4 /* SettingsModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModuleProtocol.h; sourceTree = "<group>"; };
 		920AD0BF1FBB7AEC0092CAE4 /* WeatherModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModuleProtocol.h; sourceTree = "<group>"; };
+		920AD0C61FBCBB4B0092CAE4 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		920AD0C71FBCBB4B0092CAE4 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		920AD0CB1FBCBF160092CAE4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		920AD0CE1FBCC99E0092CAE4 /* Note+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataClass.h"; sourceTree = "<group>"; };
+		920AD0CF1FBCC99E0092CAE4 /* Note+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataClass.m"; sourceTree = "<group>"; };
+		920AD0D01FBCC99E0092CAE4 /* Note+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataProperties.h"; sourceTree = "<group>"; };
+		920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataProperties.m"; sourceTree = "<group>"; };
+		920AD0D41FBCCA3E0092CAE4 /* DataManager+Notes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataManager+Notes.h"; sourceTree = "<group>"; };
+		920AD0D51FBCCA3E0092CAE4 /* DataManager+Notes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataManager+Notes.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,7 @@
 		920AD0441FBB5F700092CAE4 /* Final_App */ = {
 			isa = PBXGroup;
 			children = (
+				920AD0C11FBCBA800092CAE4 /* Library */,
 				920AD07E1FBB69670092CAE4 /* Userstory */,
 				920AD0451FBB5F700092CAE4 /* AppDelegate.h */,
 				920AD0461FBB5F700092CAE4 /* AppDelegate.m */,
@@ -440,6 +455,70 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		920AD0C11FBCBA800092CAE4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0C31FBCBAB80092CAE4 /* Network */,
+				920AD0C21FBCBAA50092CAE4 /* Storage */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		920AD0C21FBCBAA50092CAE4 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0C91FBCBEF50092CAE4 /* DataModel */,
+				920AD0C51FBCBAFE0092CAE4 /* Entities */,
+				920AD0C41FBCBAE80092CAE4 /* DataManager */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		920AD0C31FBCBAB80092CAE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		920AD0C41FBCBAE80092CAE4 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0C61FBCBB4B0092CAE4 /* DataManager.h */,
+				920AD0C71FBCBB4B0092CAE4 /* DataManager.m */,
+				920AD0D41FBCCA3E0092CAE4 /* DataManager+Notes.h */,
+				920AD0D51FBCCA3E0092CAE4 /* DataManager+Notes.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		920AD0C51FBCBAFE0092CAE4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0CD1FBCC8D00092CAE4 /* Notes */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		920AD0C91FBCBEF50092CAE4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0CA1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		920AD0CD1FBCC8D00092CAE4 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0CE1FBCC99E0092CAE4 /* Note+CoreDataClass.h */,
+				920AD0CF1FBCC99E0092CAE4 /* Note+CoreDataClass.m */,
+				920AD0D01FBCC99E0092CAE4 /* Note+CoreDataProperties.h */,
+				920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -575,15 +654,20 @@
 			files = (
 				920AD09F1FBB725E0092CAE4 /* NotesViewController.m in Sources */,
 				920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */,
+				920AD0CC1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld in Sources */,
+				920AD0D61FBCCA3E0092CAE4 /* DataManager+Notes.m in Sources */,
 				920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */,
 				920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */,
 				920AD04A1FBB5F700092CAE4 /* ViewController.m in Sources */,
 				920AD0A21FBB727D0092CAE4 /* NewsViewController.m in Sources */,
 				920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */,
 				920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */,
+				920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */,
 				920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */,
+				920AD0C81FBCBB4B0092CAE4 /* DataManager.m in Sources */,
 				920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */,
 				920AD0551FBB5F700092CAE4 /* main.m in Sources */,
+				920AD0D31FBCC99E0092CAE4 /* Note+CoreDataProperties.m in Sources */,
 				920AD0471FBB5F700092CAE4 /* AppDelegate.m in Sources */,
 				920AD0A81FBB72D10092CAE4 /* SettingsViewController.m in Sources */,
 			);
@@ -864,6 +948,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		920AD0CA1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				920AD0CB1FBCBF160092CAE4 /* Model.xcdatamodel */,
+			);
+			currentVersion = 920AD0CB1FBCBF160092CAE4 /* Model.xcdatamodel */;
+			path = AppDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 920AD03A1FBB5F700092CAE4 /* Project object */;
 }
