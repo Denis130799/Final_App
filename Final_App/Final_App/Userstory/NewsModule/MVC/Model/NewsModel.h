@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NewsModuleProtocol.h"
 
-@interface NewsModel : NSObject
+@interface NewsModel : NSObject <NewsModelInputProtocol>
+
+@property (nonatomic, weak) id <NewsModelOutputProtocol> output;
+
+
 
 @end

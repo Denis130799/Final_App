@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol NewsModuleProtocol <NSObject>
+@protocol NewsModelInputProtocol <NSObject>
+
+- (NSInteger)newsCount;
+- (id)newsObjectAtIndex:(NSInteger)index;
+- (void)dataNeedsToReload;
 
 @end
+
+@protocol NewsModelOutputProtocol <NSObject>
+
+- (void)dataDidReload;
+
+
+@end
+

@@ -50,10 +50,39 @@
                     <view key="view" contentMode="scaleToFill" id="faU-pp-hVU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A8o-WZ-ZrJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="eB2-zj-7fl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eB2-zj-7fl" id="laA-QB-5bp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MvV-0j-op0" id="51m-Hr-eta"/>
+                                    <outlet property="delegate" destination="MvV-0j-op0" id="P14-kf-e17"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.94799519050000003" blue="0.19909225159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ucx-hk-PBU" firstAttribute="bottom" secondItem="A8o-WZ-ZrJ" secondAttribute="bottom" id="A5S-kZ-ZUv"/>
+                            <constraint firstItem="Ucx-hk-PBU" firstAttribute="trailing" secondItem="A8o-WZ-ZrJ" secondAttribute="trailing" id="CIX-pi-wUe"/>
+                            <constraint firstItem="A8o-WZ-ZrJ" firstAttribute="leading" secondItem="Ucx-hk-PBU" secondAttribute="leading" id="spY-ry-LSZ"/>
+                            <constraint firstItem="A8o-WZ-ZrJ" firstAttribute="top" secondItem="Ucx-hk-PBU" secondAttribute="top" id="uNc-2W-uWE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ucx-hk-PBU"/>
                     </view>
                     <navigationItem key="navigationItem" id="rX6-e8-Eqm"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="A8o-WZ-ZrJ" id="UUz-fJ-hG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sW-XI-5vp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UD4-um-0bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3265" y="1632"/>
+            <point key="canvasLocation" x="3217" y="1739"/>
         </scene>
         <!--Item-->
         <scene sceneID="1Xe-LH-5Xp">

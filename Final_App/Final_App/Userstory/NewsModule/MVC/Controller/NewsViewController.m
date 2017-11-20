@@ -7,31 +7,50 @@
 //
 
 #import "NewsViewController.h"
+#import "NewsModel.h"
+#import "NewsModuleProtocol.h"
+#import "NewsItem.h"
+@interface NewsViewController () <UITableViewDelegate,UITableViewDataSource, NewsModelOutputProtocol>
 
-@interface NewsViewController ()
+
+
+@property (weak, nonatomic) IBOutlet UITableView *newsTableView;
+@property (nonatomic, strong) NewsModel *model;
 
 @end
 
 @implementation NewsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.model = [NewsModel new];
+    self.model.output = self;
+    [self.model dataNeedsToReload];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.model newsCount];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
+    NewsItem *news = [self.model newsObjectAtIndex:indexPath.row];
+    cell.textLabel.text = news.title;
+    
+    
+    return cell;
 }
-*/
 
+- (void)dataDidReload
+{
+    __weak typeof (self)weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf.newsTableView reloadData];
+    });
+}
 @end

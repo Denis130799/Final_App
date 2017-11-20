@@ -30,6 +30,10 @@
 		920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0CF1FBCC99E0092CAE4 /* Note+CoreDataClass.m */; };
 		920AD0D31FBCC99E0092CAE4 /* Note+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */; };
 		920AD0D61FBCCA3E0092CAE4 /* DataManager+Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0D51FBCCA3E0092CAE4 /* DataManager+Notes.m */; };
+		920AD0DB1FBF552B0092CAE4 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0DA1FBF552B0092CAE4 /* NetworkManager.m */; };
+		920AD0DF1FBF55D80092CAE4 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0DE1FBF55D80092CAE4 /* GlobalConstants.m */; };
+		920AD0E21FBF5BDF0092CAE4 /* NetworkManager+News.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */; };
+		922155341FC3450C00F658A6 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 922155331FC3450C00F658A6 /* NewsItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,14 @@
 		920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataProperties.m"; sourceTree = "<group>"; };
 		920AD0D41FBCCA3E0092CAE4 /* DataManager+Notes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataManager+Notes.h"; sourceTree = "<group>"; };
 		920AD0D51FBCCA3E0092CAE4 /* DataManager+Notes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataManager+Notes.m"; sourceTree = "<group>"; };
+		920AD0D91FBF552B0092CAE4 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		920AD0DA1FBF552B0092CAE4 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		920AD0DD1FBF55D80092CAE4 /* GlobalConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
+		920AD0DE1FBF55D80092CAE4 /* GlobalConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
+		920AD0E01FBF5BDF0092CAE4 /* NetworkManager+News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+News.h"; sourceTree = "<group>"; };
+		920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+News.m"; sourceTree = "<group>"; };
+		922155321FC3450C00F658A6 /* NewsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
+		922155331FC3450C00F658A6 /* NewsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +292,8 @@
 			children = (
 				920AD0AC1FBB77250092CAE4 /* NewsModel.h */,
 				920AD0AD1FBB77250092CAE4 /* NewsModel.m */,
+				922155321FC3450C00F658A6 /* NewsItem.h */,
+				922155331FC3450C00F658A6 /* NewsItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -458,7 +472,8 @@
 		920AD0C11FBCBA800092CAE4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				920AD0C31FBCBAB80092CAE4 /* Network */,
+				920AD0DC1FBF55AD0092CAE4 /* GlobalConstants */,
+				920AD0D81FBF54D40092CAE4 /* NetworkService */,
 				920AD0C21FBCBAA50092CAE4 /* Storage */,
 			);
 			path = Library;
@@ -472,13 +487,6 @@
 				920AD0C41FBCBAE80092CAE4 /* DataManager */,
 			);
 			path = Storage;
-			sourceTree = "<group>";
-		};
-		920AD0C31FBCBAB80092CAE4 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		920AD0C41FBCBAE80092CAE4 /* DataManager */ = {
@@ -517,6 +525,26 @@
 				920AD0D11FBCC99E0092CAE4 /* Note+CoreDataProperties.m */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		920AD0D81FBF54D40092CAE4 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0D91FBF552B0092CAE4 /* NetworkManager.h */,
+				920AD0DA1FBF552B0092CAE4 /* NetworkManager.m */,
+				920AD0E01FBF5BDF0092CAE4 /* NetworkManager+News.h */,
+				920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		920AD0DC1FBF55AD0092CAE4 /* GlobalConstants */ = {
+			isa = PBXGroup;
+			children = (
+				920AD0DD1FBF55D80092CAE4 /* GlobalConstants.h */,
+				920AD0DE1FBF55D80092CAE4 /* GlobalConstants.m */,
+			);
+			path = GlobalConstants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,13 +686,17 @@
 				920AD0D61FBCCA3E0092CAE4 /* DataManager+Notes.m in Sources */,
 				920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */,
 				920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */,
+				920AD0DF1FBF55D80092CAE4 /* GlobalConstants.m in Sources */,
 				920AD04A1FBB5F700092CAE4 /* ViewController.m in Sources */,
 				920AD0A21FBB727D0092CAE4 /* NewsViewController.m in Sources */,
+				920AD0E21FBF5BDF0092CAE4 /* NetworkManager+News.m in Sources */,
 				920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */,
 				920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */,
 				920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */,
+				922155341FC3450C00F658A6 /* NewsItem.m in Sources */,
 				920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */,
 				920AD0C81FBCBB4B0092CAE4 /* DataManager.m in Sources */,
+				920AD0DB1FBF552B0092CAE4 /* NetworkManager.m in Sources */,
 				920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */,
 				920AD0551FBB5F700092CAE4 /* main.m in Sources */,
 				920AD0D31FBCC99E0092CAE4 /* Note+CoreDataProperties.m in Sources */,
