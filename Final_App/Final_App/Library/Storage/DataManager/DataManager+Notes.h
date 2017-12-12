@@ -8,9 +8,10 @@
 
 #import "DataManager.h"
 
+
 @interface DataManager (Notes)
 
-//- (NSArray*)allNotes;
-//- (void)addNoteWithText:(NSString*)text isFavourite: (BOOL)isFavourite
+- (NSArray*)allNotes;
+- (void)addNoteWithText:(NSString*)text;
 
 @end

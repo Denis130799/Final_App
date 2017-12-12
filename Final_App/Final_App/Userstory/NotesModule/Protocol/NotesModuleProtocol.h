@@ -2,12 +2,33 @@
 //  NotesModuleProtocol.h
 //  Final_App
 //
-//  Created by Denis on 14.11.17.
+//  Created by Denis on 12.12.2017.
 //  Copyright © 2017 Denis. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol NotesModuleProtocol <NSObject>
+@protocol NotesModelInput <NSObject>
+
+- (NSInteger)notesCount;
+- (id)noteAtIndex:(NSInteger)index;
+- (void)addNoteWithText:(NSString*)text;
+
+@end
+
+@protocol NotesModelOutput <NSObject>
+
+- (void)dataDidReload;
+
+@end
+
+@protocol NotesUserInterfaceInput <NSObject>
+
+- (void)addButtonWasTapped;
+
+@end
+
+@protocol NotesUserInterfaceOutput <NSObject>
+
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WeatherModuleProtocol.h"
 
-@interface WeatherModule : NSObject
+@interface WeatherModel : NSObject <WeatherModuleInputProtocol>
+
+@property (nonatomic, weak) id <WeatherModuleOutputProtocol> output;
 
 @end

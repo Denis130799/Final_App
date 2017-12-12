@@ -19,12 +19,10 @@
 		920AD0A21FBB727D0092CAE4 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0A11FBB727D0092CAE4 /* NewsViewController.m */; };
 		920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0A41FBB72A00092CAE4 /* MapViewController.m */; };
 		920AD0A81FBB72D10092CAE4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0A71FBB72D10092CAE4 /* SettingsViewController.m */; };
-		920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0AA1FBB72E90092CAE4 /* WeatherViewController.m */; };
 		920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0AD1FBB77250092CAE4 /* NewsModel.m */; };
 		920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B01FBB77400092CAE4 /* MapModule.m */; };
-		920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B31FBB77580092CAE4 /* NotesModule.m */; };
 		920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B61FBB77790092CAE4 /* SettingsModule.m */; };
-		920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B91FBB77910092CAE4 /* WeatherModule.m */; };
+		920AD0BA1FBB77910092CAE4 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0B91FBB77910092CAE4 /* WeatherModel.m */; };
 		920AD0C81FBCBB4B0092CAE4 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0C71FBCBB4B0092CAE4 /* DataManager.m */; };
 		920AD0CC1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0CA1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld */; };
 		920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0CF1FBCC99E0092CAE4 /* Note+CoreDataClass.m */; };
@@ -34,6 +32,15 @@
 		920AD0DF1FBF55D80092CAE4 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0DE1FBF55D80092CAE4 /* GlobalConstants.m */; };
 		920AD0E21FBF5BDF0092CAE4 /* NetworkManager+News.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */; };
 		922155341FC3450C00F658A6 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 922155331FC3450C00F658A6 /* NewsItem.m */; };
+		922155371FC49A5600F658A6 /* NetworkManager+Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 922155361FC49A5600F658A6 /* NetworkManager+Weather.m */; };
+		9221553A1FC4B3C400F658A6 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920AD0AA1FBB72E90092CAE4 /* WeatherViewController.m */; };
+		9221553D1FC4B55D00F658A6 /* WeatherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9221553C1FC4B55D00F658A6 /* WeatherItem.m */; };
+		925DC6EB1FC891690065A0E2 /* WeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 925DC6EA1FC891690065A0E2 /* WeatherView.m */; };
+		928903B21FE057E50019E75E /* NotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928903B11FE057E50019E75E /* NotesView.m */; };
+		928903C61FE060300019E75E /* NotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 928903C51FE060300019E75E /* NotesModel.m */; };
+		928903CA1FE06E800019E75E /* CreateNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928903C91FE06E800019E75E /* CreateNoteViewController.m */; };
+		92FCB7131FCDEBE200D69052 /* NewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCB7121FCDEBE200D69052 /* NewsView.m */; };
+		92FCB7161FCDEFF700D69052 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCB7151FCDEFF700D69052 /* NewsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,15 +91,11 @@
 		920AD0AD1FBB77250092CAE4 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		920AD0AF1FBB77400092CAE4 /* MapModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapModule.h; sourceTree = "<group>"; };
 		920AD0B01FBB77400092CAE4 /* MapModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapModule.m; sourceTree = "<group>"; };
-		920AD0B21FBB77580092CAE4 /* NotesModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModule.h; sourceTree = "<group>"; };
-		920AD0B31FBB77580092CAE4 /* NotesModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesModule.m; sourceTree = "<group>"; };
 		920AD0B51FBB77790092CAE4 /* SettingsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModule.h; sourceTree = "<group>"; };
 		920AD0B61FBB77790092CAE4 /* SettingsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsModule.m; sourceTree = "<group>"; };
-		920AD0B81FBB77910092CAE4 /* WeatherModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModule.h; sourceTree = "<group>"; };
-		920AD0B91FBB77910092CAE4 /* WeatherModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherModule.m; sourceTree = "<group>"; };
-		920AD0BB1FBB7A6C0092CAE4 /* NotesModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModuleProtocol.h; sourceTree = "<group>"; };
+		920AD0B81FBB77910092CAE4 /* WeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		920AD0B91FBB77910092CAE4 /* WeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 		920AD0BC1FBB7A8B0092CAE4 /* NewsModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModuleProtocol.h; sourceTree = "<group>"; };
-		920AD0BD1FBB7AB10092CAE4 /* NotesModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModuleProtocol.h; sourceTree = "<group>"; };
 		920AD0BE1FBB7ACE0092CAE4 /* SettingsModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModuleProtocol.h; sourceTree = "<group>"; };
 		920AD0BF1FBB7AEC0092CAE4 /* WeatherModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModuleProtocol.h; sourceTree = "<group>"; };
 		920AD0C61FBCBB4B0092CAE4 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -112,6 +115,23 @@
 		920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+News.m"; sourceTree = "<group>"; };
 		922155321FC3450C00F658A6 /* NewsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		922155331FC3450C00F658A6 /* NewsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
+		922155351FC49A5600F658A6 /* NetworkManager+Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+Weather.h"; sourceTree = "<group>"; };
+		922155361FC49A5600F658A6 /* NetworkManager+Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+Weather.m"; sourceTree = "<group>"; };
+		9221553B1FC4B55D00F658A6 /* WeatherItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherItem.h; sourceTree = "<group>"; };
+		9221553C1FC4B55D00F658A6 /* WeatherItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherItem.m; sourceTree = "<group>"; };
+		925DC6E91FC891690065A0E2 /* WeatherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherView.h; sourceTree = "<group>"; };
+		925DC6EA1FC891690065A0E2 /* WeatherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherView.m; sourceTree = "<group>"; };
+		928903B01FE057E50019E75E /* NotesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesView.h; sourceTree = "<group>"; };
+		928903B11FE057E50019E75E /* NotesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesView.m; sourceTree = "<group>"; };
+		928903C41FE060300019E75E /* NotesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesModel.h; sourceTree = "<group>"; };
+		928903C51FE060300019E75E /* NotesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesModel.m; sourceTree = "<group>"; };
+		928903C71FE061DC0019E75E /* NotesModuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesModuleProtocol.h; sourceTree = "<group>"; };
+		928903C81FE06E800019E75E /* CreateNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateNoteViewController.h; sourceTree = "<group>"; };
+		928903C91FE06E800019E75E /* CreateNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateNoteViewController.m; sourceTree = "<group>"; };
+		92FCB7111FCDEBE200D69052 /* NewsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsView.h; sourceTree = "<group>"; };
+		92FCB7121FCDEBE200D69052 /* NewsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsView.m; sourceTree = "<group>"; };
+		92FCB7141FCDEFF700D69052 /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		92FCB7151FCDEFF700D69052 /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +274,6 @@
 		920AD0841FBB69670092CAE4 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				920AD0BB1FBB7A6C0092CAE4 /* NotesModuleProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -283,6 +302,8 @@
 			children = (
 				920AD0A01FBB727D0092CAE4 /* NewsViewController.h */,
 				920AD0A11FBB727D0092CAE4 /* NewsViewController.m */,
+				92FCB7141FCDEFF700D69052 /* NewsDetailViewController.h */,
+				92FCB7151FCDEFF700D69052 /* NewsDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +322,8 @@
 		920AD0891FBB69670092CAE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92FCB7111FCDEBE200D69052 /* NewsView.h */,
+				92FCB7121FCDEBE200D69052 /* NewsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,7 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				920AD08D1FBB69670092CAE4 /* Controller */,
-				920AD08E1FBB69670092CAE4 /* Model */,
+				928903C31FE060220019E75E /* Model */,
 				920AD08F1FBB69670092CAE4 /* View */,
 			);
 			path = MVC;
@@ -337,22 +360,17 @@
 			children = (
 				920AD09D1FBB725E0092CAE4 /* NotesViewController.h */,
 				920AD09E1FBB725E0092CAE4 /* NotesViewController.m */,
+				928903C81FE06E800019E75E /* CreateNoteViewController.h */,
+				928903C91FE06E800019E75E /* CreateNoteViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		920AD08E1FBB69670092CAE4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				920AD0B21FBB77580092CAE4 /* NotesModule.h */,
-				920AD0B31FBB77580092CAE4 /* NotesModule.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		920AD08F1FBB69670092CAE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				928903B01FE057E50019E75E /* NotesView.h */,
+				928903B11FE057E50019E75E /* NotesView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,7 +378,7 @@
 		920AD0901FBB69670092CAE4 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				920AD0BD1FBB7AB10092CAE4 /* NotesModuleProtocol.h */,
+				928903C71FE061DC0019E75E /* NotesModuleProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -448,8 +466,10 @@
 		920AD09A1FBB69670092CAE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				920AD0B81FBB77910092CAE4 /* WeatherModule.h */,
-				920AD0B91FBB77910092CAE4 /* WeatherModule.m */,
+				920AD0B81FBB77910092CAE4 /* WeatherModel.h */,
+				920AD0B91FBB77910092CAE4 /* WeatherModel.m */,
+				9221553B1FC4B55D00F658A6 /* WeatherItem.h */,
+				9221553C1FC4B55D00F658A6 /* WeatherItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -457,6 +477,8 @@
 		920AD09B1FBB69670092CAE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				925DC6E91FC891690065A0E2 /* WeatherView.h */,
+				925DC6EA1FC891690065A0E2 /* WeatherView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,6 +556,8 @@
 				920AD0DA1FBF552B0092CAE4 /* NetworkManager.m */,
 				920AD0E01FBF5BDF0092CAE4 /* NetworkManager+News.h */,
 				920AD0E11FBF5BDF0092CAE4 /* NetworkManager+News.m */,
+				922155351FC49A5600F658A6 /* NetworkManager+Weather.h */,
+				922155361FC49A5600F658A6 /* NetworkManager+Weather.m */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -545,6 +569,15 @@
 				920AD0DE1FBF55D80092CAE4 /* GlobalConstants.m */,
 			);
 			path = GlobalConstants;
+			sourceTree = "<group>";
+		};
+		928903C31FE060220019E75E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928903C41FE060300019E75E /* NotesModel.h */,
+				928903C51FE060300019E75E /* NotesModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,27 +714,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				920AD09F1FBB725E0092CAE4 /* NotesViewController.m in Sources */,
-				920AD0BA1FBB77910092CAE4 /* WeatherModule.m in Sources */,
+				920AD0BA1FBB77910092CAE4 /* WeatherModel.m in Sources */,
 				920AD0CC1FBCBF160092CAE4 /* AppDataModel.xcdatamodeld in Sources */,
 				920AD0D61FBCCA3E0092CAE4 /* DataManager+Notes.m in Sources */,
-				920AD0AB1FBB72E90092CAE4 /* WeatherViewController.m in Sources */,
 				920AD0B11FBB77400092CAE4 /* MapModule.m in Sources */,
 				920AD0DF1FBF55D80092CAE4 /* GlobalConstants.m in Sources */,
 				920AD04A1FBB5F700092CAE4 /* ViewController.m in Sources */,
+				9221553D1FC4B55D00F658A6 /* WeatherItem.m in Sources */,
 				920AD0A21FBB727D0092CAE4 /* NewsViewController.m in Sources */,
+				928903C61FE060300019E75E /* NotesModel.m in Sources */,
 				920AD0E21FBF5BDF0092CAE4 /* NetworkManager+News.m in Sources */,
-				920AD0B41FBB77580092CAE4 /* NotesModule.m in Sources */,
+				928903B21FE057E50019E75E /* NotesView.m in Sources */,
+				9221553A1FC4B3C400F658A6 /* WeatherViewController.m in Sources */,
 				920AD0B71FBB77790092CAE4 /* SettingsModule.m in Sources */,
+				922155371FC49A5600F658A6 /* NetworkManager+Weather.m in Sources */,
 				920AD0D21FBCC99E0092CAE4 /* Note+CoreDataClass.m in Sources */,
 				922155341FC3450C00F658A6 /* NewsItem.m in Sources */,
 				920AD0AE1FBB77250092CAE4 /* NewsModel.m in Sources */,
 				920AD0C81FBCBB4B0092CAE4 /* DataManager.m in Sources */,
+				925DC6EB1FC891690065A0E2 /* WeatherView.m in Sources */,
 				920AD0DB1FBF552B0092CAE4 /* NetworkManager.m in Sources */,
 				920AD0A51FBB72A00092CAE4 /* MapViewController.m in Sources */,
+				928903CA1FE06E800019E75E /* CreateNoteViewController.m in Sources */,
 				920AD0551FBB5F700092CAE4 /* main.m in Sources */,
 				920AD0D31FBCC99E0092CAE4 /* Note+CoreDataProperties.m in Sources */,
 				920AD0471FBB5F700092CAE4 /* AppDelegate.m in Sources */,
 				920AD0A81FBB72D10092CAE4 /* SettingsViewController.m in Sources */,
+				92FCB7161FCDEFF700D69052 /* NewsDetailViewController.m in Sources */,
+				92FCB7131FCDEBE200D69052 /* NewsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

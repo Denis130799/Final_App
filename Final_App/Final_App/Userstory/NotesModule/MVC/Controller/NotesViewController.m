@@ -7,31 +7,88 @@
 //
 
 #import "NotesViewController.h"
+#import "NotesView.h"
+#import "NotesModel.h"
+#import "NotesModuleProtocol.h"
+#import "CreateNoteViewController.h"
+#import "Note+CoreDataProperties.h"
 
-@interface NotesViewController ()
+@interface NotesViewController () <NotesUserInterfaceInput, NotesModelOutput, CreateNoteViewControllerProtocol, UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet NotesView *contentView;
+@property (nonatomic, strong) NotesModel *model;
+
 
 @end
 
 @implementation NotesViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setup];
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setup
+{
+    self.model = [NotesModel new];
+    self.model.output = self;
+    self.contentView.input = self;
+    self.contentView.notesTableView.dataSource = self;
+    self.contentView.notesTableView.delegate = self;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - NotesModelOutput
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dataDidReload
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contentView.notesTableView reloadData];
+    });
 }
-*/
+
+#pragma mark - NotesUserInterfaceInput
+
+- (void)addButtonWasTapped
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CreateNoteViewController *createNoteVC = [storyboard instantiateViewControllerWithIdentifier:@"CreateNoteViewController"];
+    createNoteVC.delegate = self;
+    [self presentViewController:createNoteVC animated:YES completion:nil];
+}
+
+#pragma mark - CreateNoteViewControllerProtocol
+
+- (void)textDidEnter:(NSString *)text
+{
+    if (text.length > 0)
+    {
+        [self.model addNoteWithText:text];
+    }
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.model notesCount];
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellNote"];
+    Note *note = [self.model noteAtIndex:indexPath.row];
+    cell.textLabel.text = note.text;
+    
+    return cell;
+    
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 @end

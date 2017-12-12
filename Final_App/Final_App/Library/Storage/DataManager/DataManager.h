@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
 @interface DataManager : NSObject
 
 + (id)storage;
 - (NSManagedObjectContext*)context;
 - (void)saveAll;
+
 @end

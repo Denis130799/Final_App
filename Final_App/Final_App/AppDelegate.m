@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NetworkManager+Weather.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [NetworkManager getWeatherWithSuccess:^(id object) {
+//        
+//    } andFailure:^(NSError *error) {
+//        
+//    }];
     return YES;
 }
 

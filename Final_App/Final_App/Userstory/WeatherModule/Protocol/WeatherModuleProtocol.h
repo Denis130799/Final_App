@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol WeatherModuleProtocol <NSObject>
+@protocol WeatherModuleInputProtocol <NSObject>
+
+- (void)needRefreshWeatherData;
+
+@end
+
+@protocol WeatherModuleOutputProtocol <NSObject>
+
+- (void)dataDidReloadWithModel:(id)model;
 
 @end
