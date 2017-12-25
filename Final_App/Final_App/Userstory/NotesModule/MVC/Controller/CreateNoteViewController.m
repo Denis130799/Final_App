@@ -19,13 +19,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.textView becomeFirstResponder];
     
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+    [self.textView resignFirstResponder];
     if ([self.delegate respondsToSelector:@selector(textDidEnter:)])
     {
         [self.delegate textDidEnter:self.textView.text];

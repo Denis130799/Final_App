@@ -13,7 +13,8 @@
 - (NSInteger)notesCount;
 - (id)noteAtIndex:(NSInteger)index;
 - (void)addNoteWithText:(NSString*)text;
-
+- (void)notesNeedToReload;
+- (void)removeNoteAtIndex:(NSInteger)index;
 @end
 
 @protocol NotesModelOutput <NSObject>
@@ -25,6 +26,7 @@
 @protocol NotesUserInterfaceInput <NSObject>
 
 - (void)addButtonWasTapped;
+
 
 @end
 

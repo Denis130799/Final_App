@@ -13,5 +13,6 @@
 
 - (NSArray*)allNotes;
 - (void)addNoteWithText:(NSString*)text;
+- (void)deleteNote:(id)note;
 
 @end

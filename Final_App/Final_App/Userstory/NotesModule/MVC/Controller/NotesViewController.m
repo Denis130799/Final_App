@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
     [self setup];
-   
+    [self.model notesNeedToReload];
 }
 
 - (void)setup
@@ -36,6 +36,7 @@
     self.contentView.input = self;
     self.contentView.notesTableView.dataSource = self;
     self.contentView.notesTableView.delegate = self;
+    self.contentView.notesTableView.allowsSelectionDuringEditing = NO;
 }
 
 #pragma mark - NotesModelOutput
@@ -89,6 +90,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self.model removeNoteAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+    }
 }
 
 @end

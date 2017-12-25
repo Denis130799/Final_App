@@ -34,4 +34,10 @@
     
 }
 
+- (void)deleteNote:(id)note
+{
+    [self.context deleteObject:note];
+    [self saveAll];
+}
+
 @end

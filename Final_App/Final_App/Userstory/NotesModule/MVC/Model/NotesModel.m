@@ -41,6 +41,18 @@
     [self.output dataDidReload];
 }
 
+- (void)notesNeedToReload
+{
+    [self reloadData];
+    [self.output dataDidReload];
+}
 
+- (void)removeNoteAtIndex:(NSInteger)index
+{
+    id note = [self.notesArray objectAtIndex:index];
+    [[DataManager storage] deleteNote:note];
+    [self.notesArray removeObjectAtIndex:index];
+    
+}
 
 @end
